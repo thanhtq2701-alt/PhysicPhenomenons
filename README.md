@@ -12,7 +12,7 @@ Where:
 * **$c$**: Damping coefficient (Energy dissipation)
 * **$k$**: Spring constant (Restoring force)
 
-
+![Damped Harmonic Motion](./assets/dhm.png)
 
 [Image of a free body diagram for a mass spring damper system]
 
