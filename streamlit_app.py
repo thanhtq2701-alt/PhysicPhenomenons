@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 
 # Configure the page once at the top level
 st.set_page_config(page_title="Physics Lab Suite", layout="wide")
