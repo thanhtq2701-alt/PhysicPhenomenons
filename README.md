@@ -1,43 +1,42 @@
-# Mass-Spring-Damper Vibration Solver
+# 🌐 Interactive Vibration Lab (Streamlit)
 
-This Python project simulates the dynamics of a **Single Degree of Freedom (SDOF)** vibration system. It uses numerical integration to solve the differential equations governing motion in a mechanical system.
+This web application transforms the theoretical mass-spring-damper model into an interactive dashboard. It allows engineers and students to visualize mechanical vibrations in real-time without modifying Python code.
 
-## 1. The Physics
-The system is modeled after the standard linear second-order ODE:
+## 🚀 Web Interface Usage
 
-$$m\ddot{x} + c\dot{x} + kx = 0$$
+The dashboard is designed for intuitive "what-if" analysis of mechanical systems.
 
-Where:
-* **$m$**: Mass (Inertia)
-* **$c$**: Damping coefficient (Energy dissipation)
-* **$k$**: Spring constant (Restoring force)
+### 1. Real-Time Parameter Tuning
+Use the **Sidebar Sliders** to manipulate the physical properties of the system:
+* **Mass ($m$):** Increasing mass increases inertia, leading to slower oscillations.
+* **Spring Constant ($k$):** Increasing stiffness raises the natural frequency and increases the restoring force.
+* **Damping ($c$):** Controls energy dissipation. Transition between a bouncy, **underdamped** state to a stable, **overdamped** response.
 
-![Damped Harmonic Motion](./assets/dhm.png)
+### 2. Live Physics Metrics
+The app automatically calculates and displays key engineering values in the header:
+* **Natural Frequency ($\omega_n$):** Calculated as $\sqrt{k/m}$.
+* **Damping Ratio ($\zeta$):** Defines the system's behavior (Underdamped vs. Overdamped).
+* **System State:** A dynamic label that tells you exactly how the system is behaving based on your inputs.
 
-[Image of a free body diagram for a mass spring damper system]
 
 
-## 2. Features
-* **Numerical Integration**: Uses `scipy.integrate.odeint` to solve the equations of motion.
-* **Visualization**: Generates a time-domain plot of the mass displacement using `matplotlib`.
-* **Configurable**: Easily adjust mass, stiffness, and damping to observe underdamped, overdamped, and critically damped behavior.
+### 3. Interactive Visualization
+As you adjust any slider, the physics engine (using `scipy.integrate`) re-solves the Ordinary Differential Equation (ODE) and updates the **Displacement vs. Time** plot instantly.
 
-## 3. Installation
-Ensure you have Python installed, then install the required dependencies:
+## 🛠️ Deployment Instructions
 
-```bash
-pip install numpy scipy matplotlib
-```
+To launch the web interface locally:
 
-## 4. Usage
-To run the simulation, execute the script from your terminal:
+1. **Install Streamlit:**
 
-```bash
-python vibration.py
-```
+   ```bash
+   pip install streamlit numpy scipy matplotlib
+   ```
+
+
+
 
 ## About me
 
 - Tran Quoc Thanh
 - thanhtq2701@gmail.com
-
