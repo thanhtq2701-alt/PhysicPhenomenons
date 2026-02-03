@@ -23,6 +23,8 @@ The app automatically calculates and displays key engineering values in the head
 ### 3. Interactive Visualization
 As you adjust any slider, the physics engine (using `scipy.integrate`) re-solves the Ordinary Differential Equation (ODE) and updates the **Displacement vs. Time** plot instantly.
 
+![Results](./assets/realresults.png)
+
 ## 🛠️ Deployment Instructions
 
 To launch the web interface locally:
